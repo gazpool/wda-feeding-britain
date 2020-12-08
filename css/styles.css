@@ -18,3 +18,42 @@ footer{
     clear:both;
     padding:30px;
 }
+
+.logoContainer{
+    float:left;
+    width:200px;
+}
+
+.logoContainer .logo{
+    max-width:100%;
+}
+
+nav{
+    float:right;
+}
+
+ul{
+    list-style-type: none;
+    background:red;
+}
+
+li{
+    display:inline-block;
+    padding:10px 20px;
+}
+
+li:hover{
+    background:green;
+}
+
+nav li a{
+    color:white;
+}
+
+li.active{
+    background:goldenrod;
+}
+
+.clearfix{
+    clear:both;
+}
