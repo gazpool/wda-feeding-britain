@@ -2,26 +2,39 @@
     padding:0;
     margin:0;
 }
+h1{
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background:darkgray;
+}
 
 main{
     width:calc(75% - 60px);
     float:left;
     padding:30px;
+    background:white;
 }
 aside{
     width: calc(25% - 60px);
     float: left;
     border-left: none;
     padding:30px;
+    background:whitesmoke;
 }
 footer{
     clear:both;
     padding:30px;
+    background:white;
+    align-self: center;
 }
 
 .logoContainer{
     float:left;
     width:200px;
+    padding: 5px;
 }
 
 .logoContainer .logo{
@@ -47,7 +60,7 @@ li:hover{
 }
 
 nav li a{
-    color:white;
+    color:black;
 }
 
 li.active{
@@ -56,4 +69,47 @@ li.active{
 
 .clearfix{
     clear:both;
+}
+
+.heroImage{
+    width:100%;
+}
+
+.heroImage .imageContainer{
+    height:300px;
+    max-height:300px;
+    background-image:url('https://images.genius.com/ee091b63c11df54acf11c0b293d9fcbd.1000x1000x1.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    position:relative;
+}
+
+.heroImage .imageContainer .imageCaption{
+    position: absolute;
+    padding:10px;
+    background:gray;
+    color:white;
+    bottom:30px;
+    left:30px;
+}
+
+.mainContentContainer{
+    max-width:900px;
+    margin:0 auto;
+    background:whitesmoke;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+.spotEmbed,
+.youtubeEmbed,
+p {
+    position: relative;
+    margin-bottom:30px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
 }
